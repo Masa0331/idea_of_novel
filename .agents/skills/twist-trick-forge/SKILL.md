@@ -23,7 +23,7 @@ description: Use when the user wants to create, strengthen, or audit a plot twis
 
 - `brainstorm/<セッション名>_tree.md`：分岐記録（ノードID・しおり⭐・元の枝は削除しない）
 - `brainstorm/<セッション名>_preferences.md`：嗜好プロファイル（採用/却下要素、推定傾向の確認履歴）
-- `brainstorm/<セッション名>_twist_sheet.md`：**真相シート＋伏線対応表**（このスキル固有の成果物。templates/ 参照）
+- `brainstorm/<セッション名>_twist_sheet.md`：**真相シート＋伏線対応表**（このスキル固有の成果物。雛形は同フォルダの `twist-sheet-template.md`）
 
 ベーススキルから呼ばれた場合は、既存の tree.md に枝を継ぎ足す（新規ファイルを作らない）。
 
@@ -45,7 +45,7 @@ description: Use when the user wants to create, strengthen, or audit a plot twis
 
 ### フェーズ2：型の選択
 
-`reference/trick-catalog.md` を読み込み、選んだ思い込みに適合する型を **推奨＋理由＋次点つき** で3〜5個提示する。部分選択可（例：「人物誤認を主軸に、時間誤認を補助で」）。
+`.agents/skills/twist-trick-forge/trick-catalog.md`（このスキルと同じフォルダ）を読み込み、選んだ思い込みに適合する型を **推奨＋理由＋次点つき** で3〜5個提示する。部分選択可（例：「人物誤認を主軸に、時間誤認を補助で」）。
 
 **媒体適性の確認を必ず行う**：叙述トリックは文章媒体特有の技法（映像化すると成立しないものが多い）。その特性を活かすか、映像化耐性も欲しいかを1問で確認する。
 
@@ -98,7 +98,7 @@ twist_sheet.md の伏線対応表を埋める。各手がかりについて：
 ベーススキル共通コマンド（しおり／戻る／一覧／比較／softer・harder／収束）に加えて：
 
 - 「再読テスト」：現時点の設計で再読シミュレーションだけを即時実行
-- 「型カタログ」：reference/trick-catalog.md の一覧を表示
+- 「型カタログ」：同フォルダの `trick-catalog.md` の一覧を表示
 - 「禁じ手チェック」：地の文の虚偽・後出し伏線・二重読み不成立の3点を即時確認
 
 ## よくある逸脱と対処

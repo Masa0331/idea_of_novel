@@ -19,7 +19,7 @@ description: Use when the user wants to brainstorm, develop, or refine a synopsi
 
 ## 状態管理（最重要）
 
-会話コンテキストの記憶に頼らず、毎ターン以下のファイルを更新する。テンプレートは `templates/` を参照。
+会話コンテキストの記憶に頼らず、毎ターン以下のファイルを更新する。雛形はこのスキルと同じフォルダ（`.agents/skills/mystery-deep-brainstorm/`）にある `tree-template.md` と `preferences-template.md` を参照。
 
 - `brainstorm/<セッション名>_tree.md`：アイデアツリー。全分岐をノードID（N1、N1-2、N1-2-3 の階層番号）で記録。各ノードには「提示した選択肢の全文」「選ばれた要素」「親ノードID」「⭐しおり有無」を残す
 - `brainstorm/<セッション名>_preferences.md`：嗜好プロファイル。「採用された要素」「却下された要素」「AIが推定した傾向とユーザーの修正」を蓄積
@@ -129,6 +129,7 @@ description: Use when the user wants to brainstorm, develop, or refine a synopsi
 - 「一覧」：しおり一覧と現在地パスを表示
 - 「比較 N1-2 N1-3」：2枝の内容を並べて比較し、AIの優劣所見と理由を添える
 - 「グリル」「softer」「harder」：フェーズ5の開始と強度変更
+- 「トリック錬成」：姉妹スキル `.agents/skills/twist-trick-forge/SKILL.md` を読み込み、どんでん返し・叙述トリックの設計に接続する。**新規ファイルは作らず**、現在の tree.md に枝を継ぎ足し、preferences.md をそのまま引き継ぐ
 - 「収束」「まとめて」：フェーズ6へ
 
 ## よくある逸脱と対処
