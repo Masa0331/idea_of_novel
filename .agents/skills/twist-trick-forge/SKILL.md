@@ -21,9 +21,13 @@ description: Use when the user wants to create, strengthen, or audit a plot twis
 
 ベーススキルと同じ規則で毎ターン更新する：
 
-- `brainstorm/<セッション名>_tree.md`：分岐記録（ノードID・しおり⭐・元の枝は削除しない）
-- `brainstorm/<セッション名>_preferences.md`：嗜好プロファイル（採用/却下要素、推定傾向の確認履歴）
+- `brainstorm/<セッション名>_tree.md`：分岐記録（ノードID・しおり⭐・元の枝は削除しない）。**採用内容の全文が置かれるのはこのファイルだけ**
+- `brainstorm/<セッション名>_preferences.md`：嗜好プロファイル。**いま有効な制約・嗜好・却下理由だけ**を持ち、内容はノードIDで参照する（tree と二重に持たない）
 - `brainstorm/<セッション名>_twist_sheet.md`：**真相シート＋伏線対応表**（このスキル固有の成果物。雛形は同フォルダの `twist-sheet-template.md`）
+
+**ベーススキルと共通の仕組み（すべて厳守）：** `📋宿題`（未解決論点・仮置き・未解消の抵触を tree.md 末尾で追跡）、`⚠️抵触`（確定済みの制約に抵触する案には1行付ける。抵触案を無警告で推奨に据えない）、`採用カウンタ`（P-／S- の採番）。詳細は `.agents/skills/mystery-deep-brainstorm/SKILL.md` を参照。
+
+**記録の3値ルール（ベーススキルと共通・厳守）：** ✅採用＝全文を残す／🗂保留＝1行アーカイブだけ残す（AI判断は1ノード最大2件）／❌却下・未言及＝**tree.md からは消し**、理由を preferences.md に1行だけ残す。ステータスが「選択待ち」のノードだけは全案を全文で保持し、選択を受け取った時点で圧縮する。詳細は `.agents/skills/mystery-deep-brainstorm/SKILL.md` の「記録の3値ルール」を参照。
 
 ベーススキルから呼ばれた場合は、既存の tree.md に枝を継ぎ足す（新規ファイルを作らない）。
 
