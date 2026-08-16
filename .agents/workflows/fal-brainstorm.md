@@ -7,15 +7,18 @@ description: エンタメ系ミステリーのあらすじ・プロットのブ�
 1. `mystery-deep-brainstorm` スキル（SKILL.md）を読み込み、以後はその手順・フォーマット・HARD-GATEに厳密に従うこと
 2. `brainstorm/` フォルダ内に既存の `*_tree.md` がないか確認する
    - あれば：「続きから再開しますか？　それとも新規セッションを始めますか？」と確認（質問はこれ1つだけ）
-   - 再開の場合：tree.md と preferences.md を読み込み、現在地としおり一覧を表示してから再開する
-3. 新規の場合：セッション名を日付＋短いテーマ名で自動決定し、以下の雛形を元に tree.md と preferences.md を初期化する
-   - `.agents/skills/mystery-deep-brainstorm/tree-template.md`
-   - `.agents/skills/mystery-deep-brainstorm/preferences-template.md`
-4. フェーズ0の質問（1ターン1問）から開始する
-5. 発散（フェーズ1）で案を提示したあとは、**フェーズ2の「枠指定」を必ず受け付けられる状態にする**
+   - 再開の場合：tree.md・preferences.md・**論点マップ.md** を読み込み、**論点マップの「📌 いま止まっている場所」**と現在地・しおり一覧を表示してから再開する
+   - 再開時に論点マップが存在しない旧セッションなら、**その場で雛形から作成し、tree と preferences の内容から埋めること**
+3. 新規の場合：セッション名を日付＋短いテーマ名で自動決定し、以下の雛形を元に**状態ファイル3本すべて**を初期化する
+   - `.agents/skills/mystery-deep-brainstorm/tree-template.md` → `brainstorm/<セッション名>_tree.md`
+   - `.agents/skills/mystery-deep-brainstorm/preferences-template.md` → `brainstorm/<セッション名>_preferences.md`
+   - `.agents/skills/mystery-deep-brainstorm/issue-map-template.md` → `brainstorm/<セッション名>_論点マップ.md`
+4. **状態ファイル3本は、毎ターン必ず更新すること**（論点マップは論点ごとの集約ビュー。時系列順に書かない。詳細は SKILL.md「状態管理」）
+5. フェーズ0の質問（1ターン1問）から開始する
+6. 発散（フェーズ1）で案を提示したあとは、**フェーズ2の「枠指定」を必ず受け付けられる状態にする**
    - ユーザーは1回の返答で案ごとに別々の指示を出す（例：「2改[舞台] 5改[フック] 1+3合 4,6却下」＝
      案2と案5は指定設定を残して作り直し、案1と案3は合成、案4と案6は却下、残り枠は新案）
    - ショートハンド・テンプレート・自然文のいずれで書かれても同じ意味に解釈すること
    - 指定が明確なら確認せず即生成。SKILL.md の「曖昧判定」に当たるときだけ、該当箇所を1問で確認する
    - 初回の発散時は、選択肢の末尾に**枠指定テンプレートの全文**を添えること（2ターン目以降は短縮版）
-6. 全出力は日本語。ターミナル操作が必要な場合はUTF-8強制を前置すること
+7. 全出力は日本語。ターミナル操作が必要な場合はUTF-8強制を前置すること
