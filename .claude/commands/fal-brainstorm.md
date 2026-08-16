@@ -7,7 +7,7 @@ description: エンタメ系ミステリーのあらすじ・プロットのブ�
 このコマンドは Antigravity 版 `/fal-brainstorm` と同一の手順書を参照します。
 実体は `.agents/` 側にあり、ここでは重複させません（手順書の唯一の情報源を1箇所に保つため）。
 
-1. `.agents/workflows/workflow-fal-brainstorm.md` を読み込み、その手順に厳密に従うこと
+1. `.agents/workflows/fal-brainstorm.md` を読み込み、その手順に厳密に従うこと
 2. 手順書の指示どおり `.agents/skills/mystery-deep-brainstorm/SKILL.md` を読み込み、以後はその手順・フォーマット・HARD-GATEに従うこと
 3. 状態ファイル（`brainstorm/<セッション名>_tree.md` / `_preferences.md`）の雛形は、`templates/` フォルダではなく
    `.agents/skills/mystery-deep-brainstorm/` 直下にある以下を使うこと

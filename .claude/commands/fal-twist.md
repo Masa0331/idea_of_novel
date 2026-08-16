@@ -7,7 +7,7 @@ description: どんでん返し・叙述トリックの設計セッションを�
 このコマンドは Antigravity 版 `/fal-twist` と同一の手順書を参照します。
 実体は `.agents/` 側にあり、ここでは重複させません（手順書の唯一の情報源を1箇所に保つため）。
 
-1. `.agents/workflows/workflow-fal-twist.md` を読み込み、その手順に厳密に従うこと
+1. `.agents/workflows/fal-twist.md` を読み込み、その手順に厳密に従うこと
 2. 手順書の指示どおり `.agents/skills/twist-trick-forge/SKILL.md` を読み込み、以後はその手順・フォーマット・HARD-GATEに従うこと
 3. 参照資料・雛形は、`reference/` や `templates/` フォルダではなく
    `.agents/skills/twist-trick-forge/` 直下にある以下を使うこと

@@ -7,7 +7,7 @@ description: 01_free_memo フォルダ内の free_memo_01.md ~ free_memo_10.md �
 このコマンドは Antigravity 版 `/fal-refill-free_memos` と同一の手順書を参照します。
 実体は `.agents/` 側にあり、ここでは重複させません（手順書の唯一の情報源を1箇所に保つため）。
 
-1. `.agents/workflows/workflow-fal-refill-free_memos.md` を読み込み、その手順に厳密に従うこと
+1. `.agents/workflows/fal-refill-free_memos.md` を読み込み、その手順に厳密に従うこと
 2. スクリプトの実行には **PowerShell ツール**を使い、文字化け防止のため UTF-8 指定を前置すること
    ```powershell
    [Console]::OutputEncoding = [System.Text.Encoding]::UTF8; $env:PYTHONUTF8=1; python .agents/scripts/refill_free_memos.py
