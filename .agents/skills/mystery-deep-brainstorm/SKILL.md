@@ -246,6 +246,7 @@ description: Use when the user wants to brainstorm, develop, or refine a synopsi
 - 「比較 N1-2 N1-3」：2枝の内容を並べて比較し、AIの優劣所見と理由を添える
 - 「グリル」「softer」「harder」：フェーズ5の開始と強度変更
 - 「トリック錬成」：姉妹スキル `.agents/skills/twist-trick-forge/SKILL.md` を読み込み、どんでん返し・叙述トリックの設計に接続する。**新規ファイルは作らず**、現在の tree.md に枝を継ぎ足し、preferences.md をそのまま引き継ぐ
+- 「磨き」「ポリッシュ」：姉妹スキル `.agents/skills/pinpoint-polish/SKILL.md` を読み込み、**現在ノードの案を本文として持ち込んで**1箇所ずつの修正・深掘りに接続する。preferences.md をそのまま引き継ぎ、**ユーザーに案を貼り直させない**。作業ファイルは `brainstorm/<セッション名>_polish.md`
 - 「収束」「まとめて」：フェーズ6へ
 
 ## よくある逸脱と対処
@@ -267,3 +268,4 @@ description: Use when the user wants to brainstorm, develop, or refine a synopsi
 | 曖昧なまま推測で生成し、1周まるごと無駄にした | 曖昧判定に当たるなら、該当箇所だけ1問で確認する |
 | 合成案が「並べただけ」で因果がつながっていない | 橋渡しの設定を足すか、噛み合わないと所見で指摘する |
 | 却下された案を preferences に記録せず捨てた | 却下理由と「光る部分」を必ず残す（フェーズ6で使う） |
+| 案が1つに決まっているのに発散を続けた | 「磨き」（`pinpoint-polish`）への切り替えを1問で提案する。詰める段階で発散を続けると骨格がゆらぐ |
