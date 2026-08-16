@@ -2,7 +2,7 @@
 description: 01_free_memo フォルダ内の free_memo_01.md ~ free_memo_10.md の不足分を補充する
 ---
 
-# /refill-free_memos — フリーメモ補充ワークフロー
+# /fal-refill-free_memos — フリーメモ補充ワークフロー
 
 `01_free_memo` フォルダ内の `free_memo_01.md` から `free_memo_10.md` までの空白テンプレートメモをスキャンし、タイトル変更等で減った不足分を全自動で補充します。
 

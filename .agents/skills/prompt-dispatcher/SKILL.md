@@ -1,6 +1,6 @@
 ---
 name: prompt-dispatcher
-description: Use when the user wants to run a task from the project's prompt library (`01_free_memo/プロンプト集.md`) without hunting for the template themselves — including when they say 「プロンプト集から」「いい感じのプロンプトで」「〇〇をチェックして」「〇〇を整理して」 with no template specified, or invoke /prompt. Selects the right template, fills its [ ] placeholders, gets approval, then executes it. Do NOT use for full brainstorming sessions (use mystery-deep-brainstorm) or twist design (use twist-trick-forge).
+description: Use when the user wants to run a task from the project's prompt library (`01_free_memo/プロンプト集.md`) without hunting for the template themselves — including when they say 「プロンプト集から」「いい感じのプロンプトで」「〇〇をチェックして」「〇〇を整理して」 with no template specified, or invoke /fal-prompt. Selects the right template, fills its [ ] placeholders, gets approval, then executes it. Do NOT use for full brainstorming sessions (use mystery-deep-brainstorm) or twist design (use twist-trick-forge).
 ---
 
 # プロンプト・ディスパッチャー
@@ -27,7 +27,7 @@ description: Use when the user wants to run a task from the project's prompt lib
 ## 起動時の必須動作
 
 1. `01_free_memo/プロンプト集.md` を読み込む（省略禁止。記憶で代用しない）
-2. ユーザーの入力（`/prompt` の引数）を意図として解釈する
+2. ユーザーの入力（`/fal-prompt` の引数）を意図として解釈する
 3. 引数がない場合のみ、「今日は何をしますか？」と1問だけ尋ね、よく使う入口を4つ程度添える
 
 **このスキル内で引用しているプロンプト集の章名・セクション名は、すべて執筆時点の例示である。**
@@ -39,8 +39,8 @@ description: Use when the user wants to run a task from the project's prompt lib
 
 以下に該当する場合、このスキルで処理せず**該当スキルへの切り替えを提案**する（勝手に切り替えず、1問で確認する）：
 
-- 腰を据えたあらすじ・プロットの発想セッション → `mystery-deep-brainstorm`（`/brainstorm`）
-- どんでん返し・叙述トリックの設計、伏線の逆算設計 → `twist-trick-forge`（`/twist`）
+- 腰を据えたあらすじ・プロットの発想セッション → `mystery-deep-brainstorm`（`/fal-brainstorm`）
+- どんでん返し・叙述トリックの設計、伏線の逆算設計 → `twist-trick-forge`（`/fal-twist`）
 
 単発の軽い壁打ち、単発のチェック、単発の生成はこのスキルで処理してよい。
 判断基準：**複数ターンにわたり分岐を記録しながら煮詰める作業なら委譲。1〜2ターンで完結する作業ならこのスキルで実行。**
@@ -159,7 +159,7 @@ description: Use when the user wants to run a task from the project's prompt lib
 | 推奨・理由・次点を省いた | フォーマット違反。出し直す |
 | パラメータを1ターンで質問攻めにした | 1問に絞る。3問を超えるなら推定値で一括提示に切り替える |
 | 複数工程を1つのプロンプトに混ぜた | 工程を分割して順に実行する |
-| 腰を据えたブレストをこのスキルで処理した | 委譲ルール違反。`/brainstorm` または `/twist` を提案する |
+| 腰を据えたブレストをこのスキルで処理した | 委譲ルール違反。`/fal-brainstorm` または `/fal-twist` を提案する |
 | スニペットを何個も付けて指示を薄めた | 3つまでに絞る |
 | 該当テンプレートがないのに黙って自作した | フェーズ6でプロンプト集への追記を提案する |
 | 章名・セクション名が一致しないので停止した | 名称は例示。内容から相当箇所を特定して進める |
