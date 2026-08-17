@@ -236,9 +236,10 @@
 
 
 ## 関連資料
-* [ref_law_detention_meals.md](../../05_references/04_法律・業界・倫理/ref_留置場の食事.md)
+* [ref_law_detention_meals.md](../../05_references/04_法律・業界・倫理/留置場の食事.md)
 * [佐々木 鹿乃（姪）キャラクターファイル](chr_17_trainer_kano.md)
 * [堀口 美沙（妻）キャラクターファイル〔仮〕](chr_31_wife_misako.md)
 * [佐々木 礼（妹・鹿乃の母）キャラクターファイル〔仮〕](chr_32_sister_sumie.md)
 * [たんぱくキッチン ロケーションファイル](../locations/loc_08_tanpaku_kitchen.md)
+
 

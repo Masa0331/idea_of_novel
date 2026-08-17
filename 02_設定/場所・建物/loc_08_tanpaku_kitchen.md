@@ -87,8 +87,9 @@
 
 
 ## 関連資料
-* [ref_law_detention_meals.md](../../05_references/04_法律・業界・倫理/ref_留置場の食事.md)
+* [ref_law_detention_meals.md](../../05_references/04_法律・業界・倫理/留置場の食事.md)
 * [堀口 栄士（店長）キャラクターファイル](../characters/chr_18_owner_eiji.md)
 * [佐々木 鹿乃（アルバイト）キャラクターファイル](../characters/chr_17_trainer_kano.md)
 * [堀口 美沙（準レギュラー補助）キャラクターファイル〔仮〕](../characters/chr_31_wife_misako.md)
 * [佐々木 礼（代打・鹿乃の母）キャラクターファイル〔仮〕](../characters/chr_32_sister_sumie.md)
+

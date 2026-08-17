@@ -4,7 +4,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 WORKSPACE_ROOT = os.path.dirname(BASE_DIR)
 
 memo_path = os.path.join(WORKSPACE_ROOT, '01_settings', '00_free_memo', 'free_memo_01.md')
-out_path = os.path.join(BASE_DIR, 'literature', 'ref_japanese_seasonality_and_folklore.md')
+out_path = os.path.join(BASE_DIR, 'literature', 'japanese_seasonality_and_folklore.md')
 
 with open(memo_path, 'r', encoding='utf-8') as f:
     lines = f.readlines()
@@ -59,3 +59,4 @@ with open(memo_path, 'w', encoding='utf-8') as f:
     f.write("")
 
 print("Compiled successfully to", out_path)
+
