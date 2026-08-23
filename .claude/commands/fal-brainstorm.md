@@ -9,10 +9,11 @@ description: エンタメ系ミステリーのあらすじ・プロットのブ�
 
 1. `.agents/workflows/fal-brainstorm.md` を読み込み、その手順に厳密に従うこと
 2. 手順書の指示どおり `.agents/skills/mystery-deep-brainstorm/SKILL.md` を読み込み、以後はその手順・フォーマット・HARD-GATEに従うこと
-3. 状態ファイル（`brainstorm/<セッション名>_tree.md` / `_preferences.md`）の雛形は、`templates/` フォルダではなく
+3. 状態ファイル（`brainstorm/<セッション名>_tree.md` / `_preferences.md` / `_論点マップ.md`）の雛形は、`templates/` フォルダではなく
    `.agents/skills/mystery-deep-brainstorm/` 直下にある以下を使うこと
    - `tree-template.md`
    - `preferences-template.md`
+   - `issue-map-template.md`
 4. ユーザーからの補足：$ARGUMENTS
    - 空の場合は、手順書の規定どおり（既存セッションの有無を確認したうえで）フェーズ0の質問から開始すること
    - 補足がある場合は、それをフェーズ0の「大雑把なテーマ・出発点」として扱い、重複する質問はしないこと
@@ -24,3 +25,9 @@ description: エンタメ系ミステリーのあらすじ・プロットのブ�
    - **Claude Code 固有：** SKILL.md の「曖昧判定」に当たり確認が必要な場合のみ、`AskUserQuestion` を使ってよい
      （選択肢は SKILL.md の指定どおり、AIの推奨解釈を先頭に置くこと）。曖昧でないときに使ってはならない
    - 選択肢末尾の枠指定テンプレートは、コピーしやすいよう ```text ブロックで出力すること
+7. **新規セッションは「土台モード」で始まる**（手順書の 5、SKILL.md「運用モード」節）
+   - 細かい食い違いは tree.md の `## 🩹ほつれ` へ1行で送り、`◎必須・○優先` に関わるものだけその場で出す
+   - ⚠️**黙って消してはならない。**止めるのは「手」であって「検知」ではない
+   - **Claude Code 固有：** 土台モードを抜けるときと合流点での**🩹ほつれ帳の棚卸し**は、件数が多いときに限り
+     `AskUserQuestion` で「まとめて後回し／いま全部直す／1件ずつ見る」の3択を出してよい（⭐推奨を先頭に）。
+     **1件ずつ裁定を求めるための道具として使ってはならない**
