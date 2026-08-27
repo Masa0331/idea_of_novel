@@ -2,7 +2,7 @@
 
 - 作成日：YYYY-MM-DD
 - 出典：（`/fal-brainstorm` セッション名＋ノードID ／ または「貼り付け」）
-- 引き継いだ嗜好プロファイル：（`brainstorm/<セッション名>_preferences.md` ／ なし）
+- 引き継いだ決まりごと：（`brainstorm/<セッション名>.md` ／ なし）
 
 ---
 

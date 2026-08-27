@@ -84,7 +84,7 @@ description: Use when the user wants to run a task from the project's prompt lib
 - `00_作品コンセプト＆トータル設定/` … concept.md／世界観設定.md／文体のガイドライン.md／用語集.md
 - `01_free_memo/` … 断片メモ、ギミック・どんでん返し、作品テーマ、その他（科学・医学の調べ物）
 - `02_設定/` … キャラクター／場所・建物／道具・アイテム／サイドストーリー
-- `brainstorm/` … 進行中のブレストセッション（tree.md／preferences.md／twist_sheet.md）
+- `brainstorm/` … 進行中のブレストセッション（`<セッション名>.md`／`<セッション名>_あらすじ.md`／twist_sheet.md）
 
 - 対象が1つに絞れる場合は、断定せず「このファイルで合っていますか」と確認する
 - 候補が複数ある場合は、番号付きで提示して選ばせる（質問はこれ1つだけ）
