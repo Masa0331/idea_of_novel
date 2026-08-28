@@ -1,19 +1,34 @@
 ---
-description: どんでん返し・叙述トリックの設計セッションを開始する
+description: どんでん返し・叙述トリックを、真相から逆算して作る
 ---
 
-# /fal-twist — どんでん返し・叙述トリック錬成起動（Claude Code 用）
+# /fal-twist — トリック錬成起動（Claude Code 用）
 
 このコマンドは Antigravity 版 `/fal-twist` と同一の手順書を参照します。
 実体は `.agents/` 側にあり、ここでは重複させません（手順書の唯一の情報源を1箇所に保つため）。
 
 1. `.agents/workflows/fal-twist.md` を読み込み、その手順に厳密に従うこと
-2. 手順書の指示どおり `.agents/skills/twist-trick-forge/SKILL.md` を読み込み、以後はその手順・フォーマット・HARD-GATEに従うこと
-3. 参照資料・雛形は、`reference/` や `templates/` フォルダではなく
-   `.agents/skills/twist-trick-forge/` 直下にある以下を使うこと
-   - `trick-catalog.md`（型カタログ。フェーズ2で読み込む）
-   - `twist-sheet-template.md`（真相シートの雛形）
+
+2. 手順書の指示どおり `.agents/skills/twist-trick-forge/SKILL.md` を読み込み、以後はその手順・形式・HARD-GATE に従うこと
+
+3. 参照資料・雛形は、`reference/` や `templates/` フォルダではなく次の場所にあるものを使うこと
+   - `.agents/skills/twist-trick-forge/trick-catalog.md`（型カタログ。型を選ぶときに読む）
+   - `.agents/skills/twist-trick-forge/twist-sheet-template.md`（真相ファイルの雛形）
+   - `.agents/skills/mystery-deep-brainstorm/session-template.md`（状態ファイルの雛形）
+
 4. ユーザーからの補足：$ARGUMENTS
-   - 空の場合は、手順書の規定どおり（既存ブレストセッションへの接続可否を確認したうえで）フェーズ0の質問から開始すること
-5. 既存セッションに接続する場合は、`brainstorm/<セッション名>.md` を読み込んで文脈と決まったことを引き継ぎ、
-   **新しい状態ファイルを作らず**、既存の1本に書き足すこと
+   - 空の場合は、手順書の規定どおり（既存セッションにつなぐかを確認したうえで）最初の質問から開始すること
+
+5. 既存セッションにつなぐ場合は、`brainstorm/<セッション名>.md` を読み込んで話と決まったことを引き継ぎ、
+   ⚠️ **新しい状態ファイルを作らず**、既存の1本に書き足すこと
+
+6. **Claude Code 固有：選択肢を出すとき、`AskUserQuestion` を使ってよい**
+   - ⭐おすすめを必ず先頭に置くこと
+   - ⚠️ **1ターンに出せる質問は1つだけ**（複数の質問を並べない）
+   - ⚠️ **1件ずつ裁定を求めるための道具として使ってはならない。**まとめて片づけられる形で出す
+
+7. **Claude Code 固有：ファイルの作成・編集は `Write` / `Edit` ツールを使う**
+   - ⚠️ `cat > ファイル << EOF` のヒアドキュメントは、許可設定の前方一致に当たらず毎回確認を求められる
+   - 検索・確認は `Read` / `Grep` / `Glob`、集計や一括置換は `python -` を使う
+
+8. **全出力は日本語。**ターミナル操作が必要な場合は UTF-8 強制を前置すること
