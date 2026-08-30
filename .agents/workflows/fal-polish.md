@@ -6,6 +6,10 @@ description: 決まった1案を、1箇所ずつ直して仕上げる
 
 使い方：`/fal-polish` の後に直したい案を貼って起動する（引数なしでも可）。
 
+0. **始める前に、共通ルールを読むこと**（`.agents/rules/skill-workflow-rules.md`）
+　　- ⭐ **案は名前で呼ぶ**（記号だけで指さない）／ユーザーの好みの記録／機能の改良は溜めてから
+　　- ⭐ **案を出す前に `01_free_memo/fal用メモ/fal用_好みの記録.md` を読むこと**（⚠️ そこに書かれたことを、決まった設定のように扱わない）
+
 1. `pinpoint-polish` スキル（`.agents/skills/pinpoint-polish/SKILL.md`）を読み込み、以後はその手順・形式・HARD-GATE に厳密に従うこと
 
 2. 起動時の引数を「直す対象の本文」として扱う

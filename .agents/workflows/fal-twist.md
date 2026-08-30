@@ -4,6 +4,10 @@ description: どんでん返し・叙述トリックを、真相から逆算し�
 
 # /fal-twist — トリック錬成起動
 
+0. **始める前に、共通ルールを読むこと**（`.agents/rules/skill-workflow-rules.md`）
+　　- ⭐ **案は名前で呼ぶ**（記号だけで指さない）／ユーザーの好みの記録／機能の改良は溜めてから
+　　- ⭐ **案を出す前に `01_free_memo/fal用メモ/fal用_好みの記録.md` を読むこと**（⚠️ そこに書かれたことを、決まった設定のように扱わない）
+
 1. `twist-trick-forge` スキル（`.agents/skills/twist-trick-forge/SKILL.md`）を読み込み、以後はその手順・形式・HARD-GATE に厳密に従うこと
 
 2. `brainstorm/` フォルダに既存セッションがないか確認する
