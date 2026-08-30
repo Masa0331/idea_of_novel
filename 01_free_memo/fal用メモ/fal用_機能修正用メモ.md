@@ -10,10 +10,13 @@
 
 ## 置き場
 
-『01_free_memo』フォルダ内に『fal用メモ』フォルダを作り、その中に今あるfal用の3つのファイルを移動させる。そして『fal用_作品案メモ』は『fal用_作品案メモ①』『fal用_作品案メモ②』『fal用_作品案メモ③』という風に番号を当て、常に①から⑤の5つのファイルを置くようにする。
+> ✅ **2026-08-29、下の3件はワークフローに反映済みです。**
+> - 反映先＝`.agents/skills/mystery-deep-brainstorm/SKILL.md`（新節「いま、どの段階にいるか」「あらすじの書き方」＋ 宿題の節 ＋ HARD-GATE ＋ 逸脱の表に5行）
+> - `.agents/skills/twist-trick-forge/SKILL.md` ／ `.agents/skills/pinpoint-polish/SKILL.md`（共通の決まりに追記）
+> - `.agents/workflows/fal-brainstorm.md` ／ `fal-twist.md` ／ `fal-polish.md`（末尾に3項目ずつ）
+> ⭐ 本文はそのまま残してあります。追記したいことがあれば、下に書き足してください。
 
 
+新workflow案
 
-選択肢の表示窓（tool？）が結構大きめなので、畳んだり開いたりできるようにするか、閉じたあと、再度表示できるようにするか、なにかいい方法を提案してほしい。
-
-
+キャラ設定見直し用のワークフローを作ってほしい。
