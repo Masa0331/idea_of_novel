@@ -1,6 +1,6 @@
 ---
 name: fal-setting-workbench
-description: Use when the user wants to create, rewrite, deepen, audit, merge, or delete setting material for the mystery novel — including 「キャラを作りたい」「この場所の設定を変えたい」「この設定を決めたい」「設定に矛盾がないか見て」「この設定はもう要らない」「設定に反映して」 — or invokes /fal-setting. This is the only skill that writes into `02_設定/` and `00_作品コンセプト＆トータル設定/`. Do NOT use for generating new story ideas from scratch (use mystery-deep-brainstorm), designing twists from the truth backwards (use twist-trick-forge), or drafting a synopsis (use quick-synopsis-forge).
+description: Use when the user wants to create, rewrite, deepen, audit, merge, or delete setting material for the mystery novel — including 「キャラを作りたい」「この場所の設定を変えたい」「この設定を決めたい」「設定に矛盾がないか見て」「この設定はもう要らない」「設定に反映して」 — or invokes /fal-setting. Together with fal-cleaning-sweeper, this is one of only two skills that write into `02_設定/` and `00_作品コンセプト＆トータル設定/`. Do NOT use for generating new story ideas from scratch (use mystery-deep-brainstorm), designing twists from the truth backwards (use twist-trick-forge), drafting a synopsis (use quick-synopsis-forge), or sweeping a whole file for unnecessary settings (use fal-cleaning-sweeper).
 ---
 
 # 設定の作業台（作る・直す・確かめる・畳む）
@@ -14,10 +14,14 @@ description: Use when the user wants to create, rewrite, deepen, audit, merge, o
 - `/fal-brainstorm` … 案を増やす
 - `/fal-twist` … 真相から逆算して仕掛けを作る
 - `/fal-synopsis` … あらすじの骨子を作る
+- `/fal-cleaning` … **設定を、減らす・短くする**
 - `/fal-setting`（これ） … **設定を、作る・直す・確かめる・畳む**
 
-⭐ **上の3つは `02_設定/` を書き換えない。**設定ファイルに書き込めるのは、このスキルだけである。
+⭐ **上の3つは `02_設定/` を書き換えない。**設定ファイルに書き込めるのは、**このスキルと `fal-cleaning-sweeper` の2つだけ**である。
 だから**書き込みの門番**として振る舞う。⚠️ **通していいのは、ユーザーが決めたものだけ。**
+
+⭐ **2つの役割は違う。**ここは**置く**ための道具、`/fal-cleaning` は**減らす**ための道具である。
+⚠️ **1つの設定を畳むのはここでよい。**ファイル全体を見て要らないものを洗い出すなら `/fal-cleaning` に渡す。
 
 <HARD-GATE>
 選んでもらう前に設定ファイルを書き換えてはならない。「明らかに良くなるから」「意図は明白だから」は例外にならない。
@@ -127,6 +131,7 @@ AI が思いついた設定を、ユーザーの承認なしに `02_設定/` `00
 - 参照元を出したうえで、**残す／統合する／消す**の3方向で案を出す
 - 統合する場合は、**どちらの名前を残すか**と、**消えるほうに書かれていて拾うべき記述**を挙げる
 - 消した後は、一覧ファイルと参照元の書き換えまでを1セットにする
+- ⭐ **畳むものが1つに決まっているならここでよい。**「このファイル全体から要らないものを洗い出したい」なら `/fal-cleaning` に渡す
 
 **5｜反映** … 他のワークフローで決まったことを、設定ファイルに落とす
 
@@ -233,6 +238,7 @@ AI が思いついた設定を、ユーザーの承認なしに `02_設定/` `00
 - その設定を、**先で効かせる伏線・仕掛け**として使いたい → `/fal-twist`
 - 設定の変更が、**あらすじの筋そのものを組み替える**規模になった → `/fal-synopsis`
 - **あらすじの一文そのものを直したい** → `/fal-brainstorm`（⚠️ ここでは直さない）
+- **要らない設定が多い・ファイルが長すぎる・足かせを外したい** → `/fal-cleaning`（`.agents/skills/fal-cleaning-sweeper/SKILL.md`）
 
 渡すときは**いまの内容をそのまま持ち込む**（⚠️ 貼り直させない／⚠️ 新しい状態ファイルを作らない）。
 

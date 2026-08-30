@@ -42,6 +42,7 @@ description: Use when the user wants to run a task from the project's prompt lib
 - 腰を据えたあらすじ・プロットの発想セッション → `mystery-deep-brainstorm`（`/fal-brainstorm`）
 - どんでん返し・叙述トリックの設計、伏線の逆算設計 → `twist-trick-forge`（`/fal-twist`）
 - 設定を作る・直す・確かめる・畳む（「この設定を決めたい」「キャラを作りたい」「矛盾がないか見て」「もう要らない」を何往復もする） → `fal-setting-workbench`（`/fal-setting`）
+- 要らない設定を減らす・ファイルを短くする（「設定が多すぎる」「長すぎる」「足かせを外したい」「キャラ設定を見直したい」） → `fal-cleaning-sweeper`（`/fal-cleaning`）
 
 単発の軽い壁打ち、単発のチェック、単発の生成はこのスキルで処理してよい。
 判断基準：**複数ターンにわたり分岐を記録しながら煮詰める作業なら委譲。1〜2ターンで完結する作業ならこのスキルで実行。**

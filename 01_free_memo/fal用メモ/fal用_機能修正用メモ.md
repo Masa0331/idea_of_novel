@@ -32,6 +32,22 @@
 > ⭐ 本文はそのまま残してあります。
 
 
+> ✅ **2026-08-31、下の「新workflow案」2件と、2026-08-31 の1件は反映済みです。**
+> **新しい道具 `/fal-cleaning`（設定の掃除）を作りました。**要らない設定・足かせ・重なりを減らすための道具です。
+> - `.agents/skills/fal-cleaning-sweeper/SKILL.md`（新設）／`.agents/workflows/fal-cleaning.md`（新設）／`.claude/commands/fal-cleaning.md`（新設）
+> - `.agents/workflows/fal-setting.md` ／ `.agents/skills/fal-setting-workbench/SKILL.md` ／ `.claude/commands/fal-setting.md`
+>   （`02_設定/` に書けるのは「これだけ」→「これと `/fal-cleaning` の2つだけ」に書き換え＋渡し先に1行追加）
+> - `.agents/skills/mystery-deep-brainstorm/SKILL.md` ／ `.agents/skills/twist-trick-forge/SKILL.md`（同じ「こちらだけ」の1行を書き換え）
+>
+> ⭐ **入れたもの**
+> - 「代わりの設定が要ります」と AI から言い出さない（HARD-GATE）。選択肢には必ず「代わりを置かずに、ただ消す」を入れる
+> - 「成り立たない」と判定する前に「こういう意図ですか」と1問訊く（HARD-GATE）
+> - キャラ設定の見直し（**足す提案**）は `/fal-cleaning` の中の作業として入れました。⭐ **必ず「減らしてから、足す」**の順です
+> - 消したら `📝減った：118行 → 111行` の形で、減った量を毎回出します
+>
+> ⭐ 本文はそのまま残してあります。
+
+
 
 
 ②2026-08-30｜`/fal-synopsis`｜**「一行の芯」という言い方が伝わらなかった**（「よく分からない」）。⭐ 「**この話は、〜な話です**」と訊く形にするか、例文を1つ添えると通じそう。
