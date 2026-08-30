@@ -41,7 +41,7 @@ description: Use when the user wants to run a task from the project's prompt lib
 
 - 腰を据えたあらすじ・プロットの発想セッション → `mystery-deep-brainstorm`（`/fal-brainstorm`）
 - どんでん返し・叙述トリックの設計、伏線の逆算設計 → `twist-trick-forge`（`/fal-twist`）
-- 既存の案を1箇所ずつ選択肢で詰める修正・深掘り（「ここの表現を変えたい」「この設定を決めたい」を何往復もする） → `pinpoint-polish`（`/fal-polish`）
+- 設定を作る・直す・確かめる・畳む（「この設定を決めたい」「キャラを作りたい」「矛盾がないか見て」「もう要らない」を何往復もする） → `fal-setting-workbench`（`/fal-setting`）
 
 単発の軽い壁打ち、単発のチェック、単発の生成はこのスキルで処理してよい。
 判断基準：**複数ターンにわたり分岐を記録しながら煮詰める作業なら委譲。1〜2ターンで完結する作業ならこのスキルで実行。**

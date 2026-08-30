@@ -33,8 +33,9 @@ description: エンタメ系ミステリーのあらすじ・プロットのブ�
 8. セッション中に「**トリック錬成**」と指示された場合は、`.agents/skills/twist-trick-forge/SKILL.md` を読み込み、
    **新規ファイルを作らず**、いまの状態ファイルに書き足す形で接続すること
 
-9. 「**磨き**」「**ポリッシュ**」と指示された場合は、`.agents/skills/pinpoint-polish/SKILL.md` を読み込み、
-   **いまの案を本文として持ち込む**こと（⚠️ ユーザーに案を貼り直させない）
+9. 「**磨き**」「**ポリッシュ**」と指示された場合は、`.agents/skills/mystery-deep-brainstorm/SKILL.md` の
+   「**1箇所ずつ直す（磨き）**」に従い、**いまの案をそのまま持ち込む**こと（⚠️ ユーザーに案を貼り直させない）
+   - ⚠️ ここで直すのは**文**（`_あらすじ.md` ／ `_真相.md`）。**`02_設定/` を直すのは `/fal-setting`**（`.agents/skills/fal-setting-workbench/SKILL.md`）
 
 10. **案が前に決めた設定に引っかかったら、設定のほうを疑って言うこと**
 　　- 「どれくらい効いているか」（軽い／中くらい／重い）を推し量り、**⭐こう変えれば**、または**外しても他に響かない**まで書く
@@ -46,7 +47,7 @@ description: エンタメ系ミステリーのあらすじ・プロットのブ�
 　　- ⭐ **骨格そのものを作る・作り直す**（細かい設定を無視して面白さだけを見る） → `/fal-synopsis`（`.agents/skills/quick-synopsis-forge/SKILL.md`）
 　　- 案を増やす・設定を決める・辻褄を合わせる → `/fal-brainstorm`（`.agents/skills/mystery-deep-brainstorm/SKILL.md`）
 　　- 仕掛け・伏線・二度目に効く手がかり → `/fal-twist`（`.agents/skills/twist-trick-forge/SKILL.md`）
-　　- 決まった1案を1箇所ずつ詰める → `/fal-polish`（`.agents/skills/pinpoint-polish/SKILL.md`）
+　　- 設定を作る・直す・確かめる・畳む（`02_設定/` への書き込み） → `/fal-setting`（`.agents/skills/fal-setting-workbench/SKILL.md`）
 　　- ⚠️ **選ばれたときだけ渡る。**勝手に渡らない。⚠️ 1ターンに渡す選択肢は1つまで
 　　- **渡すときは、いまの内容をそのまま持ち込む**（⚠️ 貼り直させない／⚠️ 新しい状態ファイルを作らない）。渡った先の最初のターンは `【いま】` にどこから来たかを書く
 
