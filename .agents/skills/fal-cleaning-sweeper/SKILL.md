@@ -122,6 +122,10 @@ description: Use when the user wants to thin out, tidy, shorten, or throw away e
 
 ⭐ **迷ったら「効いていない」を疑う。**いちばん数が多く、いちばん消しやすい。
 
+⚠️⚠️ **`brainstorm/` の空き枠（`・中身は未定` が付いた行）を、5つのものさしにかけてはならない。**
+⭐ **中身が無いのは、あとで話に合わせて埋めるためである。**「効いていない」「足かせ」に必ず引っかかるが、**それが正しい姿である**
+（→ `.agents/skills/mystery-deep-brainstorm/SKILL.md` の「空き枠（あとで埋める）」）。
+
 ---
 
 ## 出し方の形（読みやすさは、形で作る）
